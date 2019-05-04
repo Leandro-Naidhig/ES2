@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Página Inicial - UFSBRA Câmbio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <img style="height: 50px" src="../../../../cambio.png" class="img-fluid pr-3">
+      <a class="navbar-brand" href="#">UFSBRA Câmbio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Compras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vendas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cotações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">informações</a>
+          </li>
+        </ul>
+        <a href="../Tela_de_Login/login.php"><button class="btn btn-success my-2 my-sm-0 mr-sm-2" type="submit">Login</button></a>
+        <a href="../Tela_de_Login/cadastro.php"><button class="btn btn-danger my-1 my-sm-0" type="submit">Cadastrar</button></a>
+      </div>
+    </nav>
+      
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container text-white">
+          <h1 class="display-3 text-center">Venda de Moedas Estrangeiras</h1>
+        </div>
+      </div>
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label class="my-1 mr-2 font-weight-bold" for="inlineFormCustomSelectPref">Moeda Estrangeira a ser Comprada:</label>
+            <input type="number" class="form-control" id="inputEmail3" placeholder="Digite o Nome da Moeda ou do País" required>
+          </div>
+          <div class="form-group">
+            <label class="my-1 mr-2 font-weight-bold" for="inlineFormCustomSelectPref">Moeda para a Realização da Compra:</label>
+            <input type="number" class="form-control" id="inputEmail3" placeholder="Digite o Nome da Moeda ou do País" required>
+          </div>
+          <div class="form-group">
+            <label class="my-1 mr-2 font-weight-bold" for="inlineFormCustomSelectPref">Forma de Pagamento:</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required>
+                <option selected>Escolha o Método de Pagamento</option>
+                <option value="1">Dinheiro</option>
+                <option value="2">Crédito</option>
+                <option value="3">Débito</option>
+              </select>
+          </div>
+              
+          <div class="form-group" required>
+            <label class="my-1 mr-2 font-weight-bold" for="inlineFormCustomSelectPref">Modo de Entrega da Moeda Estrangeira:</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" required>
+                <option selected>Escolha o Tipo de Entrega</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label class="my-1 mr-2 font-weight-bold" for="inlineFormCustomSelectPref">Escolha o Valor da Compra da Moeda:</label>
+            <input type="number" class="form-control" id="inputEmail3" placeholder="Digite o Valor da Compra" required>
+          </div>
+          <p>EUR 1 = R$ 4,633161</p>
+          <p>IOF (1,10%) = R$ 50,96</p>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-dark text-light" id="inputGroup-sizing-default"><img>Sigla da Moeda : Valor Total</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" disabled value="R$ 100,00">
+           </div>
+          <button type="submit" class="btn btn-success mb-4">Finalizar Compra</button>
+        </form>
+      </div> <!-- /container -->      
+    </main>
+
+    <footer class="bg-dark">
+      <p class="h6 text-center text-light pb-4 pt-4 mb-0">UFSBRA Câmbio - 2019 &copy; Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
